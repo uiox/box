@@ -94,7 +94,7 @@ body {
 }
 
 .tou .name {
-	font-size: 23px;
+	font-size: 25px;
 	color: #fff;
 	margin-left: 150px;
 	background-color: #2196f3;
@@ -196,6 +196,14 @@ body {
 	background-color: #e2e2e2;
 }
 
+.cdtuichu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity: 0.5;
+	height: 100vh;
+}
+
 .zhezhao {
 	position: absolute;
 	width: 100%;
@@ -203,7 +211,8 @@ body {
 }
 
 .zhezhao:hover {
-	background-color: #000;
-	opacity: 0.0;
+	background-color: #2196f3;
+	width: 0;
+	opacity: 0;
 	transition: 1s;
 }
