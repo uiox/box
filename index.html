@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>宿值</title>
+		<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="./css/new_file.css">
+	</head>
+	<body>
+		<!-- 侧滑栏 -->
+		<div class="sidenav" id="mySidenav">
+			<img src="./img/q.png" alt="bg" width="100%">
+			<div class="caidan">
+				<div>
+					<img src="./img/sz.png" alt="设置" class="shezhi">
+					<a class="shezhia">设置</a>
+				</div>
+				<div>
+					<img src="./img/qk.png" alt="清空">
+					<a>清空</a>
+				</div>
+				<div>
+					<img src="./img/xx.png" alt="消息">
+					<a>消息</a>
+				</div>
+				<div>
+					<img src="./img/xz.png" alt="下载">
+					<a>下载</a>
+				</div>
+				<div onclick="closeNav()">
+					<img src="./img/tc.png" alt="退出">
+					<a onclick="closeNav()">退出</a>
+				</div>
+				<div>
+					<img src="./img/fx.png" alt="分享">
+					<a>分享</a>
+				</div>
+				<div>
+					<img src="./img/jz.png" alt="捐赠">
+					<a>捐赠</a>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="head">
+			<div class="left">
+				<img class="ce" src="./img/bl.png" alt="栏" onclick="openNav()">
+				<a class="biao">Dormitory</a>
+			</div>
+			<div class="right">
+				<img src="./img/gj.png" alt="he">
+				<img src="./img/yz.png" alt="yz">
+				<img src="./img/cd.png" alt="cd">
+			</div>
+		</div>
+		<!-- 列表 -->
+		<div class="kapian">
+			<!-- 宿舍卡片 -->
+			<div class="sushe">
+				<!-- 遮罩 -->
+				<div class="zhezhao"></div>
+				<!-- 头部 -->
+				<div class="tou">
+					<div class="touleft">
+						<img src="./img/ss.png" alt="shu" class="shu">
+						<a href="#" class="su">宿舍值日</a>
+						<a href="#" class="name" id="name">杨晓天</a>
+					</div>
+					<div class="touright">
+						<img src="./img/y.png" alt="hui" class="hui">
+					</div>
+				</div>
+				<!-- 卡片 -->
+				<div class="ka">
+					<div class="box">
+						<div class="xing"><a href="#" id="xing">Yang</a></div>
+						<div class="xianshi">
+							<a href="#" class="name" id="nam">杨晓天</a>
+							<br>
+							<a href="#" class="riqi" id="Ymd1">2022年8月23日</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 教室卡片 -->
+			<div class="jiaoshi">
+				<!-- 遮罩 -->
+				<div class="zhezhao"></div>
+				<!-- 头部 -->
+				<div class="tou">
+					<div class="touleft">
+						<img src="./img/ss.png" alt="shu" class="shu">
+						<a href="#" class="su">教室值日</a>
+						<a href="#" class="name">亚索、永恩</a>
+					</div>
+					<div class="touright">
+						<img src="./img/y.png" alt="hui" class="hui">
+					</div>
+				</div>
+				<!-- 卡片 -->
+				<div class="ka">
+					<div class="box">
+						<div class="xing"><a href="#">Ya</a></div>
+						<div class="xianshi">
+							<a href="#" class="name">亚索</a>
+							<br>
+							<a href="#" class="riqi" id="Ymd2">2022年8月23日</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 包区卡片 -->
+			<div class="baoqu">
+				<!-- 遮罩 -->
+				<div class="zhezhao"></div>
+				<!-- 头部 -->
+				<div class="tou">
+					<div class="touleft">
+						<img src="./img/ss.png" alt="shu" class="shu">
+						<a href="#" class="su">包区值日</a>
+						<a href="#" class="name">911宿舍</a>
+					</div>
+					<div class="touright">
+						<img src="./img/y.png" alt="hui" class="hui">
+					</div>
+				</div>
+				<!-- 卡片 -->
+				<div class="ka">
+					<div class="box">
+						<div class="xing"><a href="#">Gai</a></div>
+						<div class="xianshi">
+							<a href="#" class="name">盖伦</a>
+							<br>
+							<a href="#" class="riqi" id="Ymd3">2022年8月23日</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 引入js -->
+		<script src="./js/new_file.js"></script>
+	</body>
+</html>
