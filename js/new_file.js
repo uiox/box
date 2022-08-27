@@ -320,8 +320,8 @@ for (var i = 0; i < date.length; i++) {
 		document.getElementById('name').innerHTML = name;
 		document.getElementById('nam').innerHTML = nam;
 		document.getElementById('xing').innerHTML = x;
-		document.getElementById('Ymd1').innerHTML = Ymd;
-		document.getElementById('Ymd2').innerHTML = Ymd;
-		document.getElementById('Ymd3').innerHTML = Ymd;
 	}
 }
+document.getElementById('Ymd1').innerHTML = Ymd;
+document.getElementById('Ymd2').innerHTML = Ymd;
+document.getElementById('Ymd3').innerHTML = Ymd;
