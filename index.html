@@ -1,144 +1,160 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>宿值</title>
-		<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-		<link rel="stylesheet" href="./css/new_file.css">
-	</head>
-	<body>
+
+<head>
+	<meta charset="utf-8" />
+	<title>宿值</title>
+	<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/new_file.css">
+</head>
+
+<body>
+	<div class="box">
 		<!-- 侧滑栏 -->
-		<div class="sidenav" id="mySidenav">
-			<img src="./img/q.png" alt="bg" width="100%">
-			<div class="caidan">
-				<div>
-					<img src="./img/sz.png" alt="设置" class="shezhi">
-					<a class="shezhia">设置</a>
-				</div>
-				<div>
-					<img src="./img/qk.png" alt="清空">
-					<a>清空</a>
-				</div>
-				<div>
-					<img src="./img/xx.png" alt="消息">
-					<a>消息</a>
-				</div>
-				<div>
-					<img src="./img/xz.png" alt="下载">
-					<a>下载</a>
-				</div>
-				<div onclick="closeNav()">
-					<img src="./img/tc.png" alt="退出">
-					<a onclick="closeNav()">退出</a>
-				</div>
-				<div>
-					<img src="./img/fx.png" alt="分享">
-					<a>分享</a>
-				</div>
-				<div>
-					<img src="./img/jz.png" alt="捐赠">
-					<a>捐赠</a>
+		<div class="cehualan" id="mySidenav">
+			<div class="celeft">
+				<img src="./img/q.png" width="100%">
+				<div class="celb">
+					<div>
+						<img src="./img/sz.png">
+						<a>设置</a>
+					</div>
+					<div>
+						<img src="img/qk.png">
+						<a>清空</a>
+					</div>
+					<div>
+						<img src="img/xx.png">
+						<a>信息</a>
+					</div>
+					<div>
+						<img src="img/xz.png">
+						<a>下载</a>
+					</div>
+					<div onclick="closeNav()">
+						<img src="img/tc.png">
+						<a>退出</a>
+					</div>
+					<div>
+						<img src="img/fx.png">
+						<a>分享</a>
+					</div>
+					<div>
+						<img src="img/jz.png">
+						<a>捐赠</a>
+					</div>
 				</div>
 			</div>
-			<div class="cdtuichu" id="cdtuichu" onclick="closeNav()"></div>
+			<div class="ceright" onclick="closeNav()"></div>
 		</div>
 		<!-- 导航栏 -->
 		<div class="head">
-			<div class="left">
-				<img class="ce" src="./img/bl.png" alt="栏" onclick="openNav()">
-				<a class="biao">Dormitory</a>
+			<div class="hdleft">
+				<img src="./img/bl.png" style="margin-left: 30px;" onclick="openNav()">
+				<a style="color: #fff;font-size: 50px;margin-left: 40px;">Dormitory</a>
 			</div>
-			<div class="right">
-				<img src="./img/gj.png" alt="he">
-				<img src="./img/yz.png" alt="yz">
-				<img src="./img/cd.png" alt="cd">
+			<div class="hdright">
+				<img src="./img/gj.png" style="margin-right: 25px;">
+				<img src="./img/yz.png">
+				<img src="./img/cd.png" style="margin-right: 10px;">
 			</div>
 		</div>
-		<!-- 列表 -->
-		<div class="kapian">
-			<!-- 宿舍卡片 -->
+		<!-- 卡片 -->
+		<div class="kapian" style="background-color: #f5f5f5;">
+			<!-- 宿舍值日 -->
 			<div class="sushe">
 				<!-- 遮罩 -->
 				<div class="zhezhao"></div>
 				<!-- 头部 -->
-				<div class="tou">
-					<div class="touleft">
-						<img src="./img/ss.png" alt="shu" class="shu">
-						<a class="su">宿舍值日</a>
-						<a class="name" id="name">德莱文</a>
+				<div class="kphead">
+					<div class="kphdleft">
+						<img src="./img/ss.png" style="margin-left: 20px;">
+						<a style="font-size: 30px;margin-left: 50px;">宿舍值日</a>
+						<a class="name" id="name1">德莱文</a>
 					</div>
-					<div class="touright">
-						<img src="./img/y.png" alt="hui" class="hui">
+					<div class="kphdright">
+						<img src="./img/y.png" style="margin-right: 20px;">
 					</div>
 				</div>
-				<!-- 卡片 -->
-				<div class="ka">
-					<div class="box">
-						<div class="xing"><a id="xing">De</a></div>
-						<div class="xianshi">
-							<a class="name" id="nam">德莱文</a>
-							<br>
-							<a class="riqi" id="Ymd1">2022年8月23日</a>
+				<!-- 卡片信息 -->
+				<div class="kpxx">
+					<div class="kpbj">
+						<div class="kpxxtop">
+							<a class="xing" id="xing">De</a>
+						</div>
+						<div class="kpxxbottom">
+							<div style="margin-bottom: 15px;">
+								<a style="font-size: 50px;" id="name2">德莱文</a>
+							</div>
+							<a style="font-size: 40px;" id="Ymd1">2022年8月30日</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- 教室卡片 -->
-			<div class="jiaoshi">
+			<!-- 教室值日 -->
+			<div class="jiaoshi" style="margin-top: 50px;">
 				<!-- 遮罩 -->
 				<div class="zhezhao"></div>
 				<!-- 头部 -->
-				<div class="tou">
-					<div class="touleft">
-						<img src="./img/js.png" alt="shu" class="shu">
-						<a class="su">教室值日</a>
+				<div class="kphead">
+					<div class="kphdleft">
+						<img src="./img/js.png" style="margin-left: 20px;">
+						<a style="font-size: 30px;margin-left: 50px;">教室值日</a>
 						<a class="name">亚索、永恩</a>
 					</div>
-					<div class="touright">
-						<img src="./img/y.png" alt="hui" class="hui">
+					<div class="kphdright">
+						<img src="./img/y.png" style="margin-right: 20px;">
 					</div>
 				</div>
-				<!-- 卡片 -->
-				<div class="ka">
-					<div class="box">
-						<div class="xing"><a>Ya</a></div>
-						<div class="xianshi">
-							<a class="name">亚索</a>
-							<br>
-							<a class="riqi" id="Ymd2">2022年8月23日</a>
+				<!-- 卡片信息 -->
+				<div class="kpxx">
+					<div class="kpbj">
+						<div class="kpxxtop">
+							<a class="xing">Ya</a>
+						</div>
+						<div class="kpxxbottom">
+							<div style="margin-bottom: 15px;">
+								<a style="font-size: 50px;">亚索</a>
+							</div>
+							<a style="font-size: 40px;" id="Ymd2">2022年8月30日</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- 包区卡片 -->
-			<div class="baoqu">
+			<!-- 包区值日 -->
+			<div class="baoqu" style="margin-top: 50px;">
 				<!-- 遮罩 -->
 				<div class="zhezhao"></div>
 				<!-- 头部 -->
-				<div class="tou">
-					<div class="touleft">
-						<img src="./img/bq.png" alt="shu" class="shu">
-						<a class="su">包区值日</a>
+				<div class="kphead">
+					<div class="kphdleft">
+						<img src="./img/bq.png" style="margin-left: 20px;">
+						<a style="font-size: 30px;margin-left: 50px;">包区值日</a>
 						<a class="name">911宿舍</a>
 					</div>
-					<div class="touright">
-						<img src="./img/y.png" alt="hui" class="hui">
+					<div class="kphdright">
+						<img src="./img/y.png" style="margin-right: 20px;">
 					</div>
 				</div>
-				<!-- 卡片 -->
-				<div class="ka">
-					<div class="box">
-						<div class="xing"><a>Gai</a></div>
-						<div class="xianshi">
-							<a class="name">盖伦</a>
-							<br>
-							<a class="riqi" id="Ymd3">2022年8月23日</a>
+				<!-- 卡片信息 -->
+				<div class="kpxx">
+					<div class="kpbj">
+						<div class="kpxxtop">
+							<a class="xing">Gai</a>
+						</div>
+						<div class="kpxxbottom">
+							<div style="margin-bottom: 15px;">
+								<a style="font-size: 50px;">盖伦</a>
+							</div>
+							<a style="font-size: 40px;" id="Ymd3">2022年8月30日</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- 引入js -->
-		<script src="./js/new_file.js"></script>
-	</body>
+	</div>
+	<!-- 引入js -->
+	<script src="./js/new_file.js"></script>
+</body>
+
 </html>
